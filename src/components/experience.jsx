@@ -4,9 +4,21 @@ import oilstainlabsimg from '../assets/oilstainlabs.jpg';
 import fsae from '../assets/fsae.jpg';
 import lyriq from '../assets/lyriq.jpg';
 import scalar from '../assets/scalar.jpg';
+import rbr from '../assets/rbr.jpg';
 import { DoubleArrowRightIcon } from '@radix-ui/react-icons';
 
 const experiences = [
+  {
+    title: 'Software Engineer Industrial Placement',
+    company: 'Red Bull Racing',
+    duration: 'July 2025 – Present',
+    location: 'Milton Keynes, UK',
+    image: rbr,
+    description: [
+      '',
+    ],
+    skills: ['C#', '.NET', 'Python'],
+  },
   {
     title: 'Aerodynamics Design Engineer Intern',
     company: 'Oilstainlab',
@@ -129,7 +141,10 @@ const Experience = () => {
                 style={{
                   flex: '0 0 calc(100% / 3 - 1rem)',
                   minWidth: '250px',
-                  background: sharedBackground,
+                  background:
+                    index === 0
+                      ? 'linear-gradient(135deg, var(--indigo-5), var(--indigo-9))'
+                      : sharedBackground,
                   color: sharedTextColor,
                   borderRadius: '1rem',
                   scrollSnapAlign: 'start',

@@ -63,6 +63,14 @@ const projects = [
     tag: 'Matlab Simulink, CANApe, AVL',
     link: 'https://www.macecocar.ca/'
   },
+  //       {
+  //   title: 'EcoLift - Automated Robotic Spotter',
+  //   image: lyriqcals,
+  //   description:
+  //     'Designed and manufactured an automated robotic spotter that detects failure modes in power lifts and assists users to safety.',
+  //   tag: 'SolidWorks, FEA, Manufacturing, Control Systems',
+  //   link: 'https://www.macecocar.ca/'
+  // },
 
         {
     title: 'CPU Heatsink Design',
