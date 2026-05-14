@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Theme, Card, Grid, Badge, Text, Button, Tooltip, Avatar } from '@radix-ui/themes';
-import { SunIcon, GitHubLogoIcon, LinkedInLogoIcon, EnvelopeClosedIcon, RocketIcon } from "@radix-ui/react-icons"
+import { useState, useEffect } from 'react';
+import { Badge, Text, Button, Tooltip } from '@radix-ui/themes';
+import { GitHubLogoIcon, LinkedInLogoIcon, EnvelopeClosedIcon, RocketIcon } from "@radix-ui/react-icons"
 import '@radix-ui/themes/styles.css';
 import connorimage from '../assets/connor-background-free.png';
 
@@ -73,10 +73,10 @@ const Intro = () => {
           src={connorimage}
           alt="Connor"
           style={{
-            width: 'clamp(14rem, 22vw, 28rem)',
-            height: 'auto',
-            maxWidth: '150%',
+            width: '100%',
+            height: '100%',
             objectFit: 'contain',
+            objectPosition: 'center bottom',
             zIndex: 2,
           }}
         />
@@ -126,7 +126,7 @@ const Intro = () => {
             as="span"
             wrap="pretty"
           >
-            Incoming SWE @ Red Bull Racing
+            Seeking full time employment
           </Text>
         </Badge>
 

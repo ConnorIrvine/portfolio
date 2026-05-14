@@ -62,39 +62,8 @@ const TechStack = () => {
         display: 'grid',
       }}
     >
-      {/* Column 1: Technological Skills */}
+      {/* Column 1: Languages */}
       <div style={{ paddingLeft: 'clamp(0.1rem, 1vw, 2rem)' }}>
-        <Text as="div" style={sharedTitleStyle}>
-          <div
-            style={{
-              color: 'red',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '0.5rem',
-            }}
-          >
-            <GearIcon />
-            Technological Skills
-          </div>
-        </Text>
-        <ul style={listStyle}>
-          {[
-            'Ansys Fluent', 'OpenFOAM', 'Altair HyperMesh', 'Altair MotionView',
-            'Siemens NX', 'Rhino', 'CATIA', 'Paraview', 'Fusion 360', 'Inventor', 'SolidWorks',
-          ].map((tech, idx) => (
-            // The 'gap' property on <ul> now handles spacing, so marginBottom is removed.
-            <li key={idx}>
-              <Badge style={{ ...badgeStyle, ...badgeFixedWidth }} variant="soft">
-                {tech}
-              </Badge>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* Column 2: Programming Languages */}
-      <div style={{ borderLeft: '1px solid #ccc', paddingLeft: 'clamp(0.1rem, 1vw, 2rem)' }}>
         <Text as="div" style={sharedTitleStyle}>
           <div
             style={{
@@ -111,12 +80,41 @@ const TechStack = () => {
         </Text>
         <ul style={listStyle}>
           {[
-            'Python', 'C', 'C#', 'C++', 'Java', 'CSS', 'HTML', 'JavaScript',
-            'TypeScript', 'SQL', 'Matlab', 'VBA',
+            'Python', 'C#', 'SQL', 'Java', 'Kotlin', 'JavaScript', 'HTML', 'CSS', 'C++', 'JSON',
           ].map((lang, idx) => (
             <li key={idx}>
               <Badge style={{ ...badgeStyle, ...badgeFixedWidth }} variant="soft">
                 {lang}
+              </Badge>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Column 2: Frameworks & Libraries */}
+      <div style={{ borderLeft: '1px solid #ccc', paddingLeft: 'clamp(0.1rem, 1vw, 2rem)' }}>
+        <Text as="div" style={sharedTitleStyle}>
+          <div
+            style={{
+              color: 'red',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.5rem',
+            }}
+          >
+            <GearIcon />
+            Frameworks & Libraries
+          </div>
+        </Text>
+        <ul style={listStyle}>
+          {[
+            'PyTorch', 'scikit-learn', 'pandas', 'FastAPI', 'React', 'Node.js',
+            'Selenium', 'REST', 'Robot Framework', 'Jupyter',
+          ].map((fw, idx) => (
+            <li key={idx}>
+              <Badge style={{ ...badgeStyle, ...badgeFixedWidth }} variant="soft">
+                {fw}
               </Badge>
             </li>
           ))}
@@ -136,13 +134,14 @@ const TechStack = () => {
             }}
           >
             <CubeIcon />
-            Tools and Platforms
+            Tools & Platforms
           </div>
         </Text>
         <ul style={listStyle}>
           {[
-            'AVL', 'CANape', '.NET', 'Matlab Simulink', 'Apache Kafka', 'AWS (S3)',
-            'Azure', 'CANBus', 'Docker', 'Git', 'Kubernetes', 'Linux', 'WPF',
+            'Git', 'Docker', 'AWS', 'Azure', 'Ignition', 'VS Code',
+            'Visual Studio', 'PyCharm', 'IntelliJ', 'SolidWorks', 'Onshape',
+            'LTSpice', 'MATLAB', 'Simulink', 'OpenSim',
           ].map((tool, idx) => (
             <li key={idx}>
               <Badge style={{ ...badgeStyle, ...badgeFixedWidth }} variant="soft">

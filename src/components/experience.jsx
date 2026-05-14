@@ -1,94 +1,75 @@
 import { Text, Button, AlertDialog, Flex } from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
-import oilstainlabsimg from '../assets/oilstainlabs.jpg';
-import fsae from '../assets/fsae.jpg';
-import lyriq from '../assets/lyriq.jpg';
-import scalar from '../assets/scalar.jpg';
-import rbr from '../assets/rbr.jpg';
+import stmarys from '../assets/logo-stmarys.png';
+import firstontario from '../assets/logo-firstontario.png';
+import telus from '../assets/logo-telus.png';
+import miovision from '../assets/logo-miovision.png';
+import medchart from '../assets/logo-medchart.png';
 import { DoubleArrowRightIcon } from '@radix-ui/react-icons';
 
 const experiences = [
   {
-    title: 'Software Engineer Industrial Placement',
-    company: 'Red Bull Racing',
-    duration: 'July 2025 – Present',
-    location: 'Milton Keynes, UK',
-    image: rbr,
+    title: 'Systems Engineer Intern',
+    company: 'St. Marys Cement',
+    duration: 'Jan. 2025 – Aug. 2025',
+    location: 'St Marys, ON',
+    image: stmarys,
     description: [
-      '',
+      '▷ Built a Python-scripted web platform from scratch to deliver real-time HMI screen data to 20+ concurrent field users with sub-500ms responsiveness, serving as the foundation for full plant HMI modernization.',
+      '▷ Drove migration of plant HMI screens from RSView32 to the new platform, advancing completion from 10% to 90% in a single 8-month term — a transition stalled for over two years.',
+      '▷ Partnered with field operators to implement Python-driven improvements including dynamic item visibility, submenu logic, and UI animations, winning over an initially resistant user base.',
     ],
-    skills: ['C#', '.NET', 'Python'],
+    skills: ['Python', 'JavaScript', 'Ignition', 'HMI', 'RSView32'],
   },
   {
-    title: 'Aerodynamics Design Engineer Intern',
-    company: 'Oilstainlab',
-    duration: 'April 2025 – September 2025',
-    location: 'Remote',
-    image: oilstainlabsimg,
+    title: 'Junior Application Developer',
+    company: 'First Ontario Credit Union',
+    duration: 'Apr. 2024 – Aug. 2024',
+    location: 'Hamilton, ON',
+    image: firstontario,
     description: [
-      '▷ Designed underbody aero for HF-11 Hypercar through CFD analysis.',
-      '▷ Preprocessed geometry and independent mesh studies to balance detail and meshability.',
-      '▷ Validated CFD results (<5% deviation) with wind tunnel data.',
-      '▷ Generated technical reports on pressure, streamlines, and force data.',
+      '▷ Developed an end-to-end certificate management system pulling from live data tables via a JavaScript API, eliminating 5 hours of weekly administrative work per employee.',
+      '▷ Automated coaching form management with a scheduled PowerShell script and custom workflows to reassign staff records and revoke access on org changes, eliminating up to 6-month administrative delays.',
     ],
-    skills: ['Ansys Fluent', 'Rhino', 'CFD', 'Wind Tunnel Validation'],
+    skills: ['JavaScript', 'PowerShell', 'REST APIs', 'Workflow Automation'],
   },
   {
-    title: 'Aerodynamics Lead',
-    company: 'McMaster EcoCAR EV Challenge',
-    duration: 'September 2023 – Present',
-    location: 'Hamilton, ON',
-    image: lyriq,
+    title: 'Automation Software Developer',
+    company: 'TELUS Health',
+    duration: 'Sep. 2023 – Dec. 2023',
+    location: 'Cambridge, ON',
+    image: telus,
     description: [
-      '▷ Automated CFD setup/post-processing with Python.',
-      '▷ Ran and validated multi-condition CFD simulations.',
-      '▷ Designed aero components in Siemens NX, resulting in 10% drag reduction.',
-      '▷ Validated control systems using CANape, Simulink, and AVL tools.',
-      '▷ Modeled suspension in Altair MotionView for design iterations.',
+      '▷ Audited the existing Python/Selenium test suite to identify and resolve selectors vulnerable to frontend structural changes (iframes, DOM shifts), reducing test case failures by 15%.',
+      '▷ Consistently delivered 2x the expected test case output using Python and Selenium, earning recognition from senior developers for reliability and pace.',
     ],
-    skills: ['Python', 'Ansys Fluent', 'Siemens NX', 'MATLAB Simulink', 'Altair MotionView', 'AVL', 'CANape'],
+    skills: ['Python', 'Selenium', 'Robot Framework', 'Test Automation'],
   },
-    {
-    title: 'Aerodynamics Team Member',
-    company: 'McMaster Formula Student',
-    duration: 'April 2025 – Present',
-    location: 'Hamilton, ON',
-    image: fsae,
+  {
+    title: 'Software Developer',
+    company: 'Miovision',
+    duration: 'Jan. 2023 – Apr. 2023',
+    location: 'Waterloo, ON',
+    image: miovision,
     description: [
-      '▷ Designing aero components, including multi element rear wing, underbody and front wing.',
-      '▷ Ran and validating multi-condition CFD simulations.',
-      '▷ Developed genetic algorithms for optimal setups of aerodynamic components.',
+      '▷ Migrated thousands of customers and staff from Traffop to Miovision\'s identity platform across dev, testing, and production environments using JavaScript.',
+      '▷ Developed Kotlin-based decoder services to extract and decode traffic data from existing monitoring infrastructure, populating metrics across 100+ system deployments throughout Canada.',
     ],
-    skills: ['Python', 'OpenFOAM', 'Siemens NX'],
+    skills: ['JavaScript', 'Kotlin', 'Platform Migration', 'Identity Management'],
   },
-    {
-    title: 'Race Telemetry Engineer Intern',
-    company: 'Scalar Performance Inc.',
-    duration: 'May 2024 – September 2024',
+  {
+    title: 'Full Stack Developer',
+    company: 'MedChart',
+    duration: 'May 2022 – Aug. 2022',
     location: 'Toronto, ON',
-    image: scalar,
+    image: medchart,
     description: [
-      '▷ Built F1 telemetry platform using Quix, Kafka, Docker, and Kubernetes.',
-      '▷ Processed CANbus data in Python (50ms latency).',
-      '▷ Created real-time dashboard via Websockets for race engineers.',
-      '▷ Integrated Raspberry Pi with custom CANBus telemetry system.',
-      '▷ Developed hybrid controls in Simulink delivering 200+ HP.',
+      '▷ Streamlined user authorization business logic by implementing asynchronous generic-type C# methods, reducing lines of code by more than 75%.',
+      '▷ Connected Marble API to multiple REST-based medical record databases in 3 days against a 2-week timeline, presenting the new infrastructure directly to the CTO.',
+      '▷ Extended the Marble API receipt system with API call duration and Azure Operation ID fields, giving developers pinpoint error traceability that previously required manual log searching.',
     ],
-    skills: ['Python', 'Kafka', 'Quix Cloud', 'Kubernetes', 'Docker', 'Websockets', 'CANbus', 'MQTT', 'MATLAB Simulink'],
+    skills: ['C#', 'REST APIs', 'Azure', 'Full Stack', 'ASP.NET'],
   },
-  {
-    title: 'System Design and Integration Team Member',
-    company: 'McMaster EcoCAR EV Challenge',
-    duration: 'September 2022 – September 2023',
-    location: 'Hamilton, ON',
-    image: lyriq,
-    description: [
-      '▷ Redesigned rear subfloor for inverter and computer modules.',
-      '▷ Developed duct and thermal systems, reduced module temps by 16.6%.',
-    ],
-    skills: ['Siemens NX', 'FEA', 'Thermal Analysis', 'System Integration'],
-  },
-
 ];
 
 
@@ -170,15 +151,20 @@ const Experience = () => {
                       borderTopLeftRadius: '1rem',
                       borderTopRightRadius: '1rem',
                       position: 'relative',
+                      backgroundColor: 'white',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      padding: '1rem',
                     }}
                   >
                     <img
                       src={exp.image}
                       alt={`${exp.company} logo`}
                       style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
+                        maxWidth: '100%',
+                        maxHeight: '100%',
+                        objectFit: 'contain',
                         display: 'block',
                       }}
                     />
@@ -258,16 +244,26 @@ const Experience = () => {
               }}
             >
               {/* Image */}
-              <img
-                src={exp.image}
-                alt={`${exp.company} logo`}
-                style={{
-                  width: '100%',
-                  height: '200px',
-                  objectFit: 'cover',
-                  borderRadius: '1rem',
-                }}
-              />
+              <div style={{
+                width: '100%',
+                height: '140px',
+                backgroundColor: 'white',
+                borderRadius: '1rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '1.5rem',
+              }}>
+                <img
+                  src={exp.image}
+                  alt={`${exp.company} logo`}
+                  style={{
+                    maxWidth: '100%',
+                    maxHeight: '100%',
+                    objectFit: 'contain',
+                  }}
+                />
+              </div>
 
               <AlertDialog.Title
                 style={{

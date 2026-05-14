@@ -1,14 +1,9 @@
 import { Text, Button, AlertDialog, Flex, Badge } from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
-import oilstainlabsimg from '../assets/oilstainlabscfd.png';
-import fsae from '../assets/fsae1.png';
-import lyriq from '../assets/lyriq1.png';
-import lyriqcool from '../assets/lyriqcool.png';
-import lyriqcals from '../assets/lyriqcals.png';
-import scalar from '../assets/scalar1.png';
-import leetbuddy from '../assets/leetbuddy.png';
-import heatsink from '../assets/heatsink.png';
-import pacemaker from '../assets/pacemaker.png';
+import calmcoach from '../assets/calmcoach.png';
+import semg from '../assets/semg.jpg';
+import rehabilitation from '../assets/rehabilitation.png';
+import emg from '../assets/emg.png';
 import { DoubleArrowRightIcon, LayersIcon } from '@radix-ui/react-icons';
 
 
@@ -16,87 +11,41 @@ const sharedBackground = 'linear-gradient(135deg, var(--red-5), var(--red-9))';
 const sharedTextColor = 'white';
 
 const projects = [
-{
-  title: 'HF-11 Underbody Aero Design',
-  image: oilstainlabsimg,
-  description: 'Designed and optimized underbody aerodynamics of the HF-11 Hypercar with venturi channels/flaps using CFD and wind tunnel validation.',
-  tag: 'Rhino, Ansys Fluent, CFD, Aerodynamic Design',
-  link: 'https://drive.google.com/file/d/1BtjN2IYbhY-BlZYUS-iY8AX5fj5Cyl-W/view?usp=sharing', 
-},
-    {
-    title: 'SCR1 Race Telemetry Platform',
-    image: scalar,
+  {
+    title: 'sEMG Processing for Prosthesis Control',
+    image: semg,
     description:
-      'Developed a real-time telemetry platform, including streaming processing pipelines, cloud storage, customizable dashboards, and plug-n-play hardware & wiring harnesses.',
-    tag: 'Python, Kafka, Kubernetes, CANBus, Docker, Azure SQL, MQTT, Quix',
-    link: 'https://drive.google.com/file/d/1Awff38ZsXIIIJX95C6_uSioEuL-ADvmQ/view?usp=sharing/'
+      'Used ML to generate prosthetic control signals — classifying 9 hand gestures from 134-channel sEMG data with a CNN (79.6% accuracy) and predicting 18 joint angles via ridge regression (R²=0.68).',
+    tag: 'Python, PyTorch, scikit-learn, CNN, SVM, PCA',
+    link: 'https://drive.google.com/file/d/1YQOnnBgigSR6Ye_8bqJyX7nzq-FLhhji/view?usp=sharing',
   },
   {
-    title: 'Cadillac Lyriq Aero Package',
-    image: lyriq,
+    title: 'CalmCoach — HRV Biofeedback Sleep Aid',
+    image: calmcoach,
+    objectFit: 'contain',
     description:
-      'Designed aero components and validated drag reduction through CFD. Developed automation scripts to increase efficiency in the CFD workflow.',
-    tag: 'Siemens NX, Ansys Fluent, CFD, Python, Aerodynamic Design',
-    link: 'https://www.macecocar.ca/'
+      'Built a real-time PPG biosignal processing pipeline with bandpass filtering and custom peak detection to compute HRV metrics (RMSSD, RSA amplitude) via FastAPI, validated against ECG ground truth at 5.55ms MAE.',
+    tag: 'Python, FastAPI, React Native, Arduino, Signal Processing, HRV',
+    link: 'https://drive.google.com/file/d/1L6Ct2RXC9STMA5dIJE-QnpQ1SJZb_WQR/view?usp=sharing',
   },
   {
-    title: 'Formula Student Aero Genetic Algorithm',
-    image: fsae,
+    title: 'Finger Rehabilitation Device',
+    image: rehabilitation,
+    objectFit: 'contain',
     description:
-      'Developing genetic algorithms to automate and optimize aero component setups, including AoA, position, and scale.',
-    tag: 'OpenFOAM, Python, CFD, Genetic Programming',
-    link: 'https://github.com/brianmano/openfoamautomation'
+      'Developed a motorized prototype to quantify recovery progress in stroke patients with hemiparesis, writing Arduino code for motor control and force measurement, and leading the 3D printing process to ensure precise part tolerances.',
+    tag: 'SolidWorks, C++, PrusaSlicer, LTSpice, Arduino',
+    link: 'https://drive.google.com/file/d/1J8DGRq2tvMU3EBoxxOOeBH70DTPBfbI7/view?usp=sharing',
   },
-    {
-    title: 'Cadillac Lyriq Internal Thermal System',
-    image: lyriqcool,
+  {
+    title: 'Motorized EMG Driving Prosthesis',
+    image: emg,
+    objectFit: 'contain',
     description:
-      'Designed and integrated an internal thermal system, decreasing ambient temperatures of rear computer modules. Validated through thermal fluid studies.',
-    tag: 'Siemens NX, Thermal Fluids',
-    link: 'https://drive.google.com/file/d/1MycHKIV_fjeRdH1LXnZ22IIs5Ie6UfUq/view?usp=sharing'
+      'Prototyped an EMG-controlled prosthesis capable of gripping and turning a steering wheel, leading the 3D-printed mechanical design while conducting FEA to ensure stress resilience, meeting peer-reviewed standards.',
+    tag: 'SolidWorks, C++, PrusaSlicer, LTSpice, Arduino',
+    link: 'https://drive.google.com/file/d/1_KZzCBbWcrCG2ZSpFJjV0-bsMhDYKfak/view?usp=sharing',
   },
-      {
-    title: 'Cadillac Lyriq Control System Validation & Fault Analysis',
-    image: lyriqcals,
-    description:
-      'Contributed towards a root-cause analysis for low RPM torque bogging of an EV motor using a data-driven process to prove control system accuracy and isolated third-part defects.',
-    tag: 'Matlab Simulink, CANApe, AVL',
-    link: 'https://www.macecocar.ca/'
-  },
-  //       {
-  //   title: 'EcoLift - Automated Robotic Spotter',
-  //   image: lyriqcals,
-  //   description:
-  //     'Designed and manufactured an automated robotic spotter that detects failure modes in power lifts and assists users to safety.',
-  //   tag: 'SolidWorks, FEA, Manufacturing, Control Systems',
-  //   link: 'https://www.macecocar.ca/'
-  // },
-
-        {
-    title: 'CPU Heatsink Design',
-    image: heatsink,
-    description:
-      'Designed a custom CPU Heatsink using natural convection to reduce maximum temperatures compared to a factory design by 33%.',
-    tag: 'Fusion360, Thermal Analysis, Material Design, Manufacturing',
-    link: 'https://drive.google.com/file/d/1i6HKiGWrDh3BUJud11zgsxfElHyp_LHL/view?usp=sharing', 
-  },
-    {
-    title: 'LeetBuddy',
-    image: leetbuddy,
-    description:
-      'Developed a Google Chrome Extension (3000+ active users) leveraging Generative AI to provide real-time, context-aware support for LeetCode problems to personalize software interview preparation.',
-    tag: 'React, Tailwind, Express.js, Generative AI, Redis, Docker',
-    link: 'https://chromewebstore.google.com/detail/leetbuddy-your-ai-powered/nlemdecocfoaimdbfgpilfgdmcllhphn'
-  },
-      {
-    title: 'Pacemaker Project',
-    image: pacemaker,
-    description:
-      'Engineered a modern pacemaker, using Simulink code logic with a user-friendly GUI, and using an NXP FRDM K64F for serial communication.',
-    tag: 'Python, Simulink, Serial Communication, NXP FRDM K64F Board',
-    link: 'https://github.com/brianmano/Pacemaker_Project', 
-  },
-
 ];
 
 const Projects = () => {
@@ -184,7 +133,7 @@ const Projects = () => {
                       style={{
                         width: '100%',
                         height: '100%',
-                        objectFit: 'cover',
+                        objectFit: project.objectFit || 'cover',
                         display: 'block',
                       }}
                     />
