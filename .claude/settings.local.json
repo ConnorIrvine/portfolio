@@ -15,7 +15,9 @@
       "WebFetch(domain:www.logosvgpng.com)",
       "WebFetch(domain:iconape.com)",
       "WebFetch(domain:www.stmaryscement.com)",
-      "WebFetch(domain:companieslogo.com)"
+      "WebFetch(domain:companieslogo.com)",
+      "Bash(sort -rh -k5)",
+      "Bash(node -e ' *)"
     ]
   }
 }
