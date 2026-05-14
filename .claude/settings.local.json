@@ -17,7 +17,10 @@
       "WebFetch(domain:www.stmaryscement.com)",
       "WebFetch(domain:companieslogo.com)",
       "Bash(sort -rh -k5)",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\conno\\\\Documents\\\\Dev\\\\portfolio\" -Recurse -Depth 2)",
+      "Bash(Select-Object FullName)",
+      "Bash(grep -E \"\\\\.\\(config|json|ts|js\\)$\")"
     ]
   }
 }

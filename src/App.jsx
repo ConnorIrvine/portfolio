@@ -16,12 +16,11 @@ function App() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2, ease: 'easeOut' }}
-        className="h-screen w-screen flex flex-col overflow-hidden"
+        className="min-h-screen w-screen flex flex-col"
       >
-        <main className="flex-grow overflow-hidden p-4">
-          <div className="h-full">
-            {/* Mobile layout - single column with scroll */}
-            <div className="md:hidden h-full overflow-y-auto">
+        <main className="flex-1 overflow-y-auto p-4">
+          {/* Mobile layout - single column with scroll */}
+          <div className="md:hidden">
               <div className="grid gap-4 grid-cols-1 p-2">
                 <MotionBox
                   className="rounded-lg"
@@ -94,83 +93,61 @@ function App() {
                   <TechStack />
                 </MotionBox>
               </div>
-            </div>
+          </div>
 
-            {/* Desktop layout - two columns */}
-            <div
-              className="hidden md:grid h-full gap-4"
-              style={{
-                gridTemplateColumns: '1fr 1.2fr',
-                gridTemplateRows: 'repeat(16, 1fr)',
-                gridAutoFlow: 'column',
-              }}
-            >
+          {/* Desktop layout - two columns */}
+          <div
+            className="hidden md:flex gap-4"
+            style={{ minHeight: 'calc(100vh - 2rem)' }}
+          >
+            {/* Left column */}
+            <div className="flex flex-col gap-4" style={{ flex: '1', minWidth: 0 }}>
               <MotionBox
                 className="rounded-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1, duration: 0.5 }}
-                style={{
-                  gridRow: 'span 5',
-                  backgroundColor: '#eeeeee',
-                  backdropFilter: 'blur(8px)',
-                }}
+                style={{ flex: 5, minHeight: '180px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
               >
                 <Intro />
               </MotionBox>
-
               <MotionBox
                 className="rounded-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                style={{
-                  gridRow: 'span 3',
-                  backgroundColor: '#eeeeee',
-                  backdropFilter: 'blur(8px)',
-                }}
+                style={{ flex: 3, minHeight: '110px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
               >
                 <Education />
               </MotionBox>
-
               <MotionBox
                 className="rounded-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
-                style={{
-                  gridRow: 'span 8',
-                  backgroundColor: '#eeeeee',
-                  backdropFilter: 'blur(8px)',
-                }}
+                style={{ flex: 8, minHeight: '200px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
               >
                 <Experience />
               </MotionBox>
+            </div>
 
+            {/* Right column */}
+            <div className="flex flex-col gap-4" style={{ flex: '1.2', minWidth: 0 }}>
               <MotionBox
                 className="rounded-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                style={{
-                  gridRow: 'span 10',
-                  backgroundColor: '#eeeeee',
-                  backdropFilter: 'blur(8px)',
-                }}
+                style={{ flex: 10, minHeight: '300px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
               >
                 <Projects />
               </MotionBox>
-
               <MotionBox
                 className="rounded-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
-                style={{
-                  gridRow: 'span 6',
-                  backgroundColor: '#eeeeee',
-                  backdropFilter: 'blur(8px)',
-                }}
+                style={{ flex: 6, minHeight: '200px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
               >
                 <TechStack />
               </MotionBox>

@@ -9,7 +9,7 @@ import {
 const TechStack = () => {
   const sharedTitleStyle = {
     fontFamily: 'Inter, system-ui, sans-serif',
-    fontSize: 'clamp(0.4rem, 1vw, 4rem)',
+    fontSize: 'clamp(0.75rem, 1.5vw, 1rem)',
     fontWeight: 700,
     background: 'linear-gradient(135deg, var(--red-5) 0%, var(--red-9) 100%)',
     WebkitBackgroundClip: 'text',
@@ -22,7 +22,7 @@ const TechStack = () => {
   const badgeStyle = {
     fontFamily: 'Inter, system-ui, sans-serif',
     fontWeight: 500,
-    fontSize: 'clamp(0.3rem, 0.6vw, 6rem)',
+    fontSize: 'clamp(0.65rem, 1.2vw, 0.85rem)',
     color: 'black',
     background: 'rgba(212, 212, 212, 0.06)', // soft glassy background
     border: '1px solid rgba(255, 255, 255, 0.2)', // subtle border
@@ -45,11 +45,9 @@ const TechStack = () => {
   };
 
   const badgeFixedWidth = {
-    width: 'clamp(3rem, 7vw, 12rem)', 
     display: 'inline-block',
     textAlign: 'center',
-    whiteSpace: 'normal',
-    wordBreak: 'break-word',
+    whiteSpace: 'nowrap',
   };
 
   return (
@@ -57,8 +55,8 @@ const TechStack = () => {
       className="grid gap-2 w-full h-full p-3"
       style={{
         gridTemplateColumns: '2fr 2fr 2fr',
-        gridTemplateRows: '1fr',
-        overflow: 'hidden',
+        gridTemplateRows: 'auto',
+        overflowY: 'auto',
         display: 'grid',
       }}
     >
