@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Theme, Card, Grid, Badge, Text, Button, Tooltip, Avatar } from '@radix-ui/themes';
 import { SunIcon, GitHubLogoIcon, LinkedInLogoIcon, EnvelopeClosedIcon, RocketIcon } from "@radix-ui/react-icons"
 import '@radix-ui/themes/styles.css';
-import brianImage from '../assets/brian1.png';
+import connorimage from '../assets/connor-background-free.png';
 
 const TypingAnimation = ({ texts, typingSpeed = 100, pauseTime = 1500 }) => {
   const [displayedText, setDisplayedText] = useState('');
@@ -70,12 +70,12 @@ const Intro = () => {
         }}
       >
         <img
-          src={brianImage}
-          alt="Brian"
+          src={connorimage}
+          alt="Connor"
           style={{
-            width: 'clamp(8rem, 12vw, 18rem)',
+            width: 'clamp(14rem, 22vw, 28rem)',
             height: 'auto',
-            maxWidth: '90%',
+            maxWidth: '150%',
             objectFit: 'contain',
             zIndex: 2,
           }}
@@ -143,7 +143,7 @@ const Intro = () => {
           }}
           as="div"
         >
-          Brian Manomaisupat
+          Connor Irvine
         </Text>
         <Text
           style={{
@@ -157,10 +157,9 @@ const Intro = () => {
           }}
           as="div"
         >
-          #affirmed
           <TypingAnimation
             // texts={['Aerodynamics.', 'Race Telemetry.', 'Vehicle Dynamics.', 'Calibration & Validation.']}
-            texts={[' F1',' Red Bull Racing']}
+            texts={['Software Developer',' Systems Engineer']}
             typingSpeed={120}
             pauseTime={1500}
           />
@@ -193,7 +192,7 @@ const Intro = () => {
             }}
             >
             <a 
-                href="https://www.linkedin.com/in/brian-mano/" 
+                href="https://www.linkedin.com/in/connor-john-irvine/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={{
@@ -252,7 +251,7 @@ const Intro = () => {
             }}
             >
             <a 
-                href="https://github.com/brianmano" 
+                href="https://github.com/ConnorIrvine" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={{
@@ -309,7 +308,7 @@ const Intro = () => {
             }}
             >
             <a 
-                href="mailto:brian.manomaisupat@gmail.com" 
+                href="mailto:connorjohnirvine@gmail.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={{

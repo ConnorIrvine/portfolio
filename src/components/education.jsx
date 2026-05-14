@@ -74,7 +74,7 @@ const Education = () => {
             as="span"
             wrap="pretty"
         >
-            McMaster University
+            University of Waterloo
         </Text>
         </div>
 
@@ -88,7 +88,7 @@ const Education = () => {
             as="span"
             wrap="pretty"
         >
-            September 2021 - December 2027 (Expected)
+            September 2021 - April 2026
         </Text>
 
         <Text
@@ -101,7 +101,7 @@ const Education = () => {
             as="span"
             wrap="pretty"
         >
-            B.Eng - Bachelors of Mechatronics and Biomedical Engineering
+            BASc  - Bachelors of Biomedical Engineering
         </Text>
         </div>
 
