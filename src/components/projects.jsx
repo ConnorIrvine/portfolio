@@ -22,6 +22,7 @@ const projects = [
   {
     title: 'CalmCoach — HRV Biofeedback Sleep Aid',
     image: calmcoach,
+    objectFit: 'contain',
     description:
       'Built a real-time PPG biosignal processing pipeline with bandpass filtering and custom peak detection to compute HRV metrics (RMSSD, RSA amplitude) via FastAPI, validated against ECG ground truth at 5.55ms MAE.',
     tag: 'Python, FastAPI, React Native, Arduino, Signal Processing, HRV',
@@ -124,6 +125,10 @@ const Projects = () => {
                         borderRadius: '0.75rem',
                         overflow: 'hidden',
                         flexShrink: 0,
+                        backgroundColor: project.objectFit === 'contain' ? 'white' : 'transparent',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                     }}
                     >
                     <img
@@ -134,6 +139,7 @@ const Projects = () => {
                         height: '100%',
                         objectFit: project.objectFit || 'cover',
                         display: 'block',
+                        padding: project.objectFit === 'contain' ? '0.5rem' : '0',
                       }}
                     />
                   </div>
@@ -150,9 +156,9 @@ const Projects = () => {
                 <Text
                 as="div"
                 style={{
-                    fontSize: 'clamp(0.3rem, 0.8vw, 1.25rem)', // Reasonable clamp
+                    fontSize: 'clamp(0.75rem, 1vw, 1.25rem)',
                     fontWeight: 700,
-                    lineHeight: 1.4, // More breathing room
+                    lineHeight: 1.4,
                     overflowWrap: 'break-word',
                     wordBreak: 'break-word',
                 }}
@@ -163,7 +169,7 @@ const Projects = () => {
                 <Text
                 as="div"
                 style={{
-                    fontSize: 'clamp(0.4rem, 0.6vw, 1rem)', // Adjusted clamp
+                    fontSize: 'clamp(0.65rem, 0.75vw, 1rem)',
                     opacity: 0.85,
                     marginTop: '0.25rem',
                     lineHeight: 1.5,
@@ -192,7 +198,7 @@ const Projects = () => {
                     variant="soft"
                     style={{
                         fontFamily: 'Inter, system-ui, sans-serif',
-                        fontSize: 'clamp(0.4rem, 0.6vw, 2rem)',
+                        fontSize: 'clamp(0.6rem, 0.7vw, 1rem)',
                         color: 'var(--red-11)',
                         fontWeight: 300,
                     }}
