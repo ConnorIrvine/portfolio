@@ -4,7 +4,7 @@ import calmcoach from '../assets/calmcoach.png';
 import semg from '../assets/semg.jpg';
 import rehabilitation from '../assets/rehabilitation.png';
 import emg from '../assets/emg.png';
-import { DoubleArrowRightIcon, LayersIcon } from '@radix-ui/react-icons';
+import { LayersIcon, Link2Icon } from '@radix-ui/react-icons';
 
 
 const sharedBackground = 'linear-gradient(135deg, var(--red-5), var(--red-9))';
@@ -114,8 +114,8 @@ const Projects = () => {
                   style={{
                     display: 'flex',
                     gap: '1rem',
-                    alignItems: 'center',
-                    overflow: 'hidden',
+                    alignItems: 'flex-start',
+                    overflow: 'visible',
                   }}
                 >
                     <div
@@ -149,8 +149,8 @@ const Projects = () => {
                       flexGrow: 1,
                       display: 'flex',
                       flexDirection: 'column',
-                      justifyContent: 'center',
-                      overflow: 'hidden',
+                      justifyContent: 'flex-start',
+                      minWidth: 0,
                     }}
                   >
                 <Text
@@ -159,8 +159,9 @@ const Projects = () => {
                     fontSize: 'clamp(0.75rem, 1vw, 1.25rem)',
                     fontWeight: 700,
                     lineHeight: 1.4,
-                    overflowWrap: 'break-word',
+                    whiteSpace: 'normal',
                     wordBreak: 'break-word',
+                    overflowWrap: 'break-word',
                 }}
                 >
                 {project.title}
@@ -208,23 +209,22 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* View More Button (absolute position) */}
-                <div
-                style={{
-                    alignSelf: 'flex-end',
-                    backgroundColor: 'rgba(17, 17, 17, 0.3)',
-                    padding: '0.3rem 0.6rem',
-                    borderRadius: '0.4rem',
-                    fontSize: '0.75rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.25rem',
-                    fontFamily: 'Inter, system-ui, sans-serif',
-                    fontWeight: 500,
-                }}
-                >
-                View <DoubleArrowRightIcon />
+                {/* Link icon */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '0.6rem',
+                  right: '0.6rem',
+                  backgroundColor: 'rgba(255,255,255,0.85)',
+                  borderRadius: '50%',
+                  width: '1.6rem',
+                  height: '1.6rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}>
+                  <Link2Icon style={{ color: 'black', width: '1rem', height: '1rem' }} />
                 </div>
+
               </div>
             </AlertDialog.Trigger>
 
