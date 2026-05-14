@@ -99,38 +99,33 @@ const Projects = () => {
                     color: sharedTextColor,
                     borderRadius: '1rem',
                     cursor: 'pointer',
-                    display: 'grid',
-                    gridTemplateRows: 'auto auto auto', // Allow rows to auto size
+                    display: 'flex',
+                    flexDirection: 'column',
                     width: '100%',
-                    minHeight: '240px', // Increased minHeight
+                    minWidth: 0,
+                    minHeight: '200px',
                     padding: '1rem',
-                    gap: '0.5rem',
+                    paddingBottom: '2.5rem',
+                    gap: '0.75rem',
                     fontFamily: 'Inter, system-ui, sans-serif',
                     boxSizing: 'border-box',
+                    overflow: 'hidden',
                 }}
                 >
-                {/* Top Row: Image + Title & Description */}
-                <div
-                  style={{
+                {/* Image + Text column */}
+                <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', minWidth: 0, flexShrink: 0 }}>
+                  {/* Image */}
+                  <div style={{
+                    width: '80px',
+                    height: '80px',
+                    flexShrink: 0,
+                    borderRadius: '0.6rem',
+                    overflow: 'hidden',
+                    backgroundColor: project.objectFit === 'contain' ? 'white' : 'transparent',
                     display: 'flex',
-                    gap: '1rem',
-                    alignItems: 'flex-start',
-                    overflow: 'visible',
-                  }}
-                >
-                    <div
-                    style={{
-                        width: '40%',
-                        aspectRatio: '1.4',
-                        borderRadius: '0.75rem',
-                        overflow: 'hidden',
-                        flexShrink: 0,
-                        backgroundColor: project.objectFit === 'contain' ? 'white' : 'transparent',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                    }}
-                    >
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
                     <img
                       src={project.image}
                       alt={project.title}
@@ -139,57 +134,41 @@ const Projects = () => {
                         height: '100%',
                         objectFit: project.objectFit || 'cover',
                         display: 'block',
-                        padding: project.objectFit === 'contain' ? '0.5rem' : '0',
+                        padding: project.objectFit === 'contain' ? '0.4rem' : '0',
                       }}
                     />
                   </div>
-
-                  <div
-                    style={{
-                      flexGrow: 1,
-                      display: 'flex',
-                      flexDirection: 'column',
-                      justifyContent: 'flex-start',
-                      minWidth: 0,
-                    }}
-                  >
-                <Text
-                as="div"
-                style={{
-                    fontSize: 'clamp(0.75rem, 1vw, 1.25rem)',
-                    fontWeight: 700,
-                    lineHeight: 1.4,
-                    whiteSpace: 'normal',
-                    wordBreak: 'break-word',
-                    overflowWrap: 'break-word',
-                }}
-                >
-                {project.title}
-                </Text>
-
-                <Text
-                as="div"
-                style={{
-                    fontSize: 'clamp(0.65rem, 0.75vw, 1rem)',
-                    opacity: 0.85,
-                    marginTop: '0.25rem',
-                    lineHeight: 1.5,
-                    wordBreak: 'break-word',
-                }}
-                >
-                {project.description}
-                </Text>
-
+                  {/* Title + Description */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', minWidth: 0, flexGrow: 1 }}>
+                    <Text as="div" style={{
+                      fontSize: 'clamp(0.75rem, 1vw, 1.1rem)',
+                      fontWeight: 700,
+                      lineHeight: 1.3,
+                      wordBreak: 'break-word',
+                      overflowWrap: 'break-word',
+                    }}>
+                      {project.title}
+                    </Text>
+                    <Text as="div" style={{
+                      fontSize: 'clamp(0.6rem, 0.75vw, 0.9rem)',
+                      lineHeight: 1.5,
+                      opacity: 0.9,
+                      fontFamily: 'Inter, system-ui, sans-serif',
+                      wordBreak: 'break-word',
+                      overflowWrap: 'break-word',
+                    }}>
+                      {project.description}
+                    </Text>
                   </div>
                 </div>
 
-                {/* Bottom Row: Tags */}
+                {/* Tags — always visible, pushed to bottom */}
+                <div style={{ marginTop: 'auto' }}>
                 <div
                   style={{
                     display: 'flex',
                     flexWrap: 'wrap',
                     gap: '0.5rem',
-                    marginTop: '0.3srem',
                   }}
                 >
                   {project.tag.split(',').map((tagItem, tagIndex) => (
@@ -226,6 +205,7 @@ const Projects = () => {
                 </div>
 
               </div>
+                </div>
             </AlertDialog.Trigger>
 
             {/* AlertDialog Content */}
