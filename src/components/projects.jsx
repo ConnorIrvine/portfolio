@@ -22,7 +22,6 @@ const projects = [
   {
     title: 'CalmCoach — HRV Biofeedback Sleep Aid',
     image: calmcoach,
-    objectFit: 'contain',
     description:
       'Built a real-time PPG biosignal processing pipeline with bandpass filtering and custom peak detection to compute HRV metrics (RMSSD, RSA amplitude) via FastAPI, validated against ECG ground truth at 5.55ms MAE.',
     tag: 'Python, FastAPI, React Native, Arduino, Signal Processing, HRV',
