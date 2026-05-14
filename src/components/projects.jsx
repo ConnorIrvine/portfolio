@@ -2,7 +2,7 @@ import { Text, Button, AlertDialog, Flex, Badge } from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
 import calmcoach from '../assets/calmcoach.png';
 import semg from '../assets/semg.jpg';
-import rehabilitation from '../assets/rehabilitation.png';
+import rehabilitation from '../assets/rehabilitation.jpg';
 import emg from '../assets/emg.png';
 import { LayersIcon, Link2Icon } from '@radix-ui/react-icons';
 
