@@ -75,7 +75,7 @@ const experiences = [
 
 
 const Experience = () => {
-  const sharedBackground = 'linear-gradient(135deg, var(--red-5), var(--red-9))';
+  const sharedBackground = 'linear-gradient(135deg, var(--indigo-5), var(--indigo-9))';
   const sharedTextColor = 'white';
 
   return (
@@ -122,10 +122,7 @@ const Experience = () => {
                 style={{
                   flex: '0 0 calc(100% / 3 - 1rem)',
                   minWidth: '250px',
-                  background:
-                    index === 0
-                      ? 'linear-gradient(135deg, var(--indigo-5), var(--indigo-9))'
-                      : sharedBackground,
+                  background: sharedBackground,
                   color: sharedTextColor,
                   borderRadius: '1rem',
                   scrollSnapAlign: 'start',
@@ -313,7 +310,7 @@ const Experience = () => {
                     <span
                       key={i}
                       style={{
-                        backgroundColor: 'var(--red-6)',
+                        backgroundColor: 'var(--indigo-6)',
                         color: 'white',
                         padding: '0.35rem 0.75rem',
                         borderRadius: '9999px',
@@ -332,7 +329,7 @@ const Experience = () => {
                 <AlertDialog.Cancel>
                   <Button
                     style={{
-                      background: 'var(--red-8)',
+                      background: 'var(--indigo-8)',
                       color: 'white',
                       cursor: 'pointer',
                     }}

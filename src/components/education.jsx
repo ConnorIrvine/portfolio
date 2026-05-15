@@ -25,7 +25,7 @@ const Education = () => {
             fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: 'clamp(1.5rem, 2vw, 3rem)',
             fontWeight: 600,
-            background: 'linear-gradient(135deg, var(--red-5) 0%, var(--red-9) 100%)',
+            background: 'linear-gradient(135deg, var(--indigo-5) 0%, var(--indigo-9) 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
           }}

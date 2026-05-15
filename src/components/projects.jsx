@@ -7,7 +7,7 @@ import emg from '../assets/emg.png';
 import { LayersIcon, Link2Icon } from '@radix-ui/react-icons';
 
 
-const sharedBackground = 'linear-gradient(135deg, var(--red-5), var(--red-9))';
+const sharedBackground = 'linear-gradient(135deg, var(--indigo-5), var(--indigo-9))';
 const sharedTextColor = 'white';
 
 const projects = [
@@ -175,12 +175,12 @@ const Projects = () => {
                   {project.tag.split(',').map((tagItem, tagIndex) => (
                     <Badge
                     key={tagIndex}
-                    color="ruby"
+                    color="indigo"
                     variant="soft"
                     style={{
                         fontFamily: 'Inter, system-ui, sans-serif',
                         fontSize: 'clamp(0.6rem, 0.7vw, 1rem)',
-                        color: 'var(--red-11)',
+                        color: 'var(--indigo-11)',
                         fontWeight: 300,
                     }}
                     >
@@ -298,7 +298,7 @@ const Projects = () => {
                     <Button
                         className="close-button"
                         style={{
-                        background: 'var(--red-8)',
+                        background: 'var(--indigo-8)',
                         color: 'white',
                         transition: 'all 0.3s ease',
                         cursor: 'pointer',
@@ -340,7 +340,7 @@ const Projects = () => {
 
         /* Close Button Hover Effect */
         .close-button:hover {
-            background: var(--red-9) !important;
+            background: var(--indigo-9) !important;
             transform: translateY(-1px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }

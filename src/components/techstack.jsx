@@ -11,7 +11,7 @@ const TechStack = () => {
     fontFamily: 'Inter, system-ui, sans-serif',
     fontSize: 'clamp(0.75rem, 1.5vw, 1rem)',
     fontWeight: 700,
-    background: 'linear-gradient(135deg, var(--red-5) 0%, var(--red-9) 100%)',
+    background: 'linear-gradient(135deg, var(--indigo-5) 0%, var(--indigo-9) 100%)',
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
     textAlign: 'center',
@@ -65,7 +65,7 @@ const TechStack = () => {
         <Text as="div" style={sharedTitleStyle}>
           <div
             style={{
-              color: 'red',
+              color: 'var(--indigo-9)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -94,7 +94,7 @@ const TechStack = () => {
         <Text as="div" style={sharedTitleStyle}>
           <div
             style={{
-              color: 'red',
+              color: 'var(--indigo-9)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -124,7 +124,7 @@ const TechStack = () => {
         <Text as="div" style={sharedTitleStyle}>
           <div
             style={{
-              color: 'red',
+              color: 'var(--indigo-9)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',

@@ -61,7 +61,7 @@ const Intro = () => {
         style={{
           gridColumn: 'span 2',
           gridRow: 'span 2',
-          background: 'linear-gradient(135deg, var(--red-5) 0%, var(--red-9) 100%)',
+          background: 'linear-gradient(135deg, var(--indigo-5) 0%, var(--indigo-9) 100%)',
           boxShadow: '8px 8px 32px rgba(0, 0, 0, 0.3)',
           position: 'relative',
           display: 'flex',
@@ -136,7 +136,7 @@ const Intro = () => {
             fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: 'clamp(1.4rem, 2.2vw, 3rem)',
             fontWeight: 600,
-            background: 'linear-gradient(135deg, var(--red-5) 0%, var(--red-9) 100%)',
+            background: 'linear-gradient(135deg, var(--indigo-5) 0%, var(--indigo-9) 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             marginTop: '0.4rem',
@@ -208,7 +208,7 @@ const Intro = () => {
                 style={{ 
                     width: 'clamp(2rem, 2.6vw, 3rem)',
                     height: 'clamp(2rem, 2.6vw, 3rem)',
-                    color: 'var(--red-10)',
+                    color: 'var(--indigo-10)',
                     transition: 'all 0.2s ease'
                 }}
                 onMouseEnter={(e) => {
@@ -267,7 +267,7 @@ const Intro = () => {
                 style={{ 
                     width: 'clamp(2rem, 2.6vw, 3rem)',
                     height: 'clamp(2rem, 2.6vw, 3rem)',
-                    color: 'var(--red-10)',
+                    color: 'var(--indigo-10)',
                     transition: 'all 0.2s ease'
                 }}
                 onMouseEnter={(e) => {
@@ -324,7 +324,7 @@ const Intro = () => {
                 style={{ 
                     width: 'clamp(2rem, 2.6vw, 3rem)',
                     height: 'clamp(2rem, 2.6vw, 3rem)',
-                    color: 'var(--red-10)',
+                    color: 'var(--indigo-10)',
                     transition: 'all 0.2s ease'
                 }}
                 onMouseEnter={(e) => {
