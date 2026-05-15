@@ -15,7 +15,8 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  background: #101010 !important;
+  background: linear-gradient(135deg, #1a0a0a 0%, #2d1114 25%, #4a1d2a 50%, #1f0f1a 75%, #0a0608 100%) !important;
+  background-attachment: fixed !important;
 }
 
 /* Only target container divs, not the cards */
@@ -24,6 +25,12 @@ body {
 [data-radix-theme] > div:first-child,
 main {
   background: transparent !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: white !important;
 }
 
 h1 {

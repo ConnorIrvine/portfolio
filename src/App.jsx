@@ -11,7 +11,7 @@ const MotionBox = motion(Box);
 
 function App() {
   return (
-    <Theme accentColor="teal" appearance="dark" radius="large">
+    <Theme accentColor="red" appearance="dark" radius="large">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ function App() {
                   transition={{ delay: 0.1, duration: 0.5 }}
                   style={{
                     minHeight: '200px',
-                    backgroundColor: '#191919',
+                    backgroundColor: '#eeeeee',
                     backdropFilter: 'blur(8px)',
                   }}
                 >
@@ -43,7 +43,7 @@ function App() {
                   transition={{ delay: 0.2, duration: 0.5 }}
                   style={{
                     minHeight: '100px',
-                    backgroundColor: '#191919',
+                    backgroundColor: '#eeeeee',
                     backdropFilter: 'blur(8px)',
                   }}
                 >
@@ -57,7 +57,7 @@ function App() {
                   transition={{ delay: 0.3, duration: 0.5 }}
                   style={{
                     minHeight: '150px',
-                    backgroundColor: '#191919',
+                    backgroundColor: '#eeeeee',
                     backdropFilter: 'blur(8px)',
                   }}
                 >
@@ -72,7 +72,7 @@ function App() {
                   style={{
                     minHeight: '150px',
                     maxHeight: '600px',
-                    backgroundColor: '#191919',
+                    backgroundColor: '#eeeeee',
                     backdropFilter: 'blur(8px)',
                   }}
                 >
@@ -86,7 +86,7 @@ function App() {
                   transition={{ delay: 0.5, duration: 0.5 }}
                   style={{
                     minHeight: '300px',
-                    backgroundColor: '#191919',
+                    backgroundColor: '#eeeeee',
                     backdropFilter: 'blur(8px)',
                   }}
                 >
@@ -107,7 +107,7 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1, duration: 0.5 }}
-                style={{ flex: 5, minHeight: '180px', backgroundColor: '#191919', backdropFilter: 'blur(8px)' }}
+                style={{ flex: 5, minHeight: '180px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
               >
                 <Intro />
               </MotionBox>
@@ -116,7 +116,7 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                style={{ flex: 3, minHeight: '110px', backgroundColor: '#191919', backdropFilter: 'blur(8px)' }}
+                style={{ flex: 3, minHeight: '110px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
               >
                 <Education />
               </MotionBox>
@@ -125,7 +125,7 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
-                style={{ flex: 8, minHeight: '200px', backgroundColor: '#191919', backdropFilter: 'blur(8px)' }}
+                style={{ flex: 8, minHeight: '200px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
               >
                 <Experience />
               </MotionBox>
@@ -138,7 +138,7 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                style={{ flex: 10, minHeight: '300px', backgroundColor: '#191919', backdropFilter: 'blur(8px)' }}
+                style={{ flex: 10, minHeight: '300px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
               >
                 <Projects />
               </MotionBox>
@@ -147,7 +147,7 @@ function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
-                style={{ flex: 6, minHeight: '200px', backgroundColor: '#191919', backdropFilter: 'blur(8px)' }}
+                style={{ flex: 6, minHeight: '200px', backgroundColor: '#eeeeee', backdropFilter: 'blur(8px)' }}
               >
                 <TechStack />
               </MotionBox>

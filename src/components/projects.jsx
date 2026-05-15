@@ -7,7 +7,7 @@ import emg from '../assets/emg.png';
 import { LayersIcon, Link2Icon } from '@radix-ui/react-icons';
 
 
-const sharedBackground = 'linear-gradient(135deg, var(--teal-5), var(--teal-9))';
+const sharedBackground = 'linear-gradient(135deg, var(--red-5), var(--red-9))';
 const sharedTextColor = 'white';
 
 const projects = [
@@ -65,7 +65,9 @@ const Projects = () => {
             fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: 'clamp(1.5rem, 2vw, 3rem)',
             fontWeight: 600,
-            color: 'var(--teal-9)',
+            background: sharedBackground,
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
           }}
           as="div"
         >
@@ -144,7 +146,7 @@ const Projects = () => {
                       lineHeight: 1.3,
                       wordBreak: 'break-word',
                       overflowWrap: 'break-word',
-                      filter: 'brightness(0.93)',
+                      
                     }}>
                       {project.title}
                     </Text>
@@ -173,12 +175,12 @@ const Projects = () => {
                   {project.tag.split(',').map((tagItem, tagIndex) => (
                     <Badge
                     key={tagIndex}
-                    color="teal"
+                    color="ruby"
                     variant="soft"
                     style={{
                         fontFamily: 'Inter, system-ui, sans-serif',
                         fontSize: 'clamp(0.6rem, 0.7vw, 1rem)',
-                        color: 'var(--teal-11)',
+                        color: 'var(--red-11)',
                         fontWeight: 300,
                     }}
                     >
@@ -215,8 +217,8 @@ const Projects = () => {
                     maxHeight: '80vh',
                     padding: '1.5rem',
                     borderRadius: '1rem',
-                    backgroundColor: '#191919',
-                    color: '#e5e5e5',
+                    backgroundColor: '#eeeeee',
+                    color: '#000',
                     overflowY: 'auto',
                     display: 'flex',
                     flexDirection: 'column',
@@ -296,7 +298,7 @@ const Projects = () => {
                     <Button
                         className="close-button"
                         style={{
-                        background: 'var(--teal-8)',
+                        background: 'var(--red-8)',
                         color: 'white',
                         transition: 'all 0.3s ease',
                         cursor: 'pointer',
@@ -338,7 +340,7 @@ const Projects = () => {
 
         /* Close Button Hover Effect */
         .close-button:hover {
-            background: var(--teal-9) !important;
+            background: var(--red-9) !important;
             transform: translateY(-1px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }

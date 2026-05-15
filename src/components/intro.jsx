@@ -61,7 +61,7 @@ const Intro = () => {
         style={{
           gridColumn: 'span 2',
           gridRow: 'span 2',
-          background: 'linear-gradient(135deg, var(--teal-5) 0%, var(--teal-9) 100%)',
+          background: 'linear-gradient(135deg, var(--red-5) 0%, var(--red-9) 100%)',
           boxShadow: '8px 8px 32px rgba(0, 0, 0, 0.3)',
           position: 'relative',
           display: 'flex',
@@ -99,30 +99,29 @@ const Intro = () => {
             transform: 'translateX(-50%)',
             width: '90%',
             height: '1px',
-            backgroundColor: '#4d4d4d',
+            backgroundColor: 'rgba(204, 204, 204, 1)',
           }}
         />
         {/* Top: Tag */}
         <Badge
-          color="gray"
+          color="amber"
           size="2"
           style={{
             display: 'flex',
             alignItems: 'center',
             gap: '0.5rem',
-            backgroundColor: 'transparent',
-            color: '#2DD4BF',
-            border: '1px solid #2DD4BF',
+            backgroundColor: 'var(--amber-9)',
+            color: 'var(--amber-1)',
             alignSelf: 'flex-start',
           }}
         >
-          <RocketIcon style={{ color: '#2DD4BF' }} />
+          <RocketIcon />
           <Text
             style={{
               fontFamily: 'Inter, system-ui, sans-serif',
               fontSize: 'clamp(0.65rem, 0.9vw, 1rem)',
               fontWeight: 500,
-              color: '#2DD4BF',
+              color: 'var(--amber-1)',
             }}
             as="span"
             wrap="pretty"
@@ -137,7 +136,9 @@ const Intro = () => {
             fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: 'clamp(1.4rem, 2.2vw, 3rem)',
             fontWeight: 600,
-            color: 'var(--teal-9)',
+            background: 'linear-gradient(135deg, var(--red-5) 0%, var(--red-9) 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
             marginTop: '0.4rem',
           }}
           as="div"
@@ -207,7 +208,7 @@ const Intro = () => {
                 style={{ 
                     width: 'clamp(2rem, 2.6vw, 3rem)',
                     height: 'clamp(2rem, 2.6vw, 3rem)',
-                    color: 'var(--teal-10)',
+                    color: 'var(--red-10)',
                     transition: 'all 0.2s ease'
                 }}
                 onMouseEnter={(e) => {
@@ -266,7 +267,7 @@ const Intro = () => {
                 style={{ 
                     width: 'clamp(2rem, 2.6vw, 3rem)',
                     height: 'clamp(2rem, 2.6vw, 3rem)',
-                    color: 'var(--teal-10)',
+                    color: 'var(--red-10)',
                     transition: 'all 0.2s ease'
                 }}
                 onMouseEnter={(e) => {
@@ -323,7 +324,7 @@ const Intro = () => {
                 style={{ 
                     width: 'clamp(2rem, 2.6vw, 3rem)',
                     height: 'clamp(2rem, 2.6vw, 3rem)',
-                    color: 'var(--teal-10)',
+                    color: 'var(--red-10)',
                     transition: 'all 0.2s ease'
                 }}
                 onMouseEnter={(e) => {
