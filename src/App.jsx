@@ -11,7 +11,7 @@ const MotionBox = motion(Box);
 
 function App() {
   return (
-    <Theme accentColor="red" appearance="dark" radius="large">
+    <Theme accentColor="indigo" appearance="dark" radius="large">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
