@@ -75,7 +75,7 @@ const experiences = [
 
 
 const Experience = () => {
-  const sharedBackground = 'linear-gradient(135deg, var(--red-5), var(--red-9))';
+  const sharedBackground = 'linear-gradient(135deg, var(--teal-5), var(--teal-9))';
   const sharedTextColor = 'white';
 
   return (
@@ -94,9 +94,7 @@ const Experience = () => {
             fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: 'clamp(1.5rem, 2vw, 3rem)',
             fontWeight: 600,
-            background: sharedBackground,
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
+            color: 'var(--teal-9)',
           }}
           as="div"
         >
@@ -124,7 +122,7 @@ const Experience = () => {
                   minWidth: '250px',
                   background:
                     index === 0
-                      ? 'linear-gradient(135deg, var(--indigo-5), var(--indigo-9))'
+                      ? 'linear-gradient(135deg, var(--teal-5), var(--teal-9))'
                       : sharedBackground,
                   color: sharedTextColor,
                   borderRadius: '1rem',
@@ -156,6 +154,7 @@ const Experience = () => {
                       alignItems: 'center',
                       justifyContent: 'center',
                       padding: '1rem',
+                      filter: 'brightness(0.93)',
                     }}
                   >
                     <img
@@ -235,8 +234,8 @@ const Experience = () => {
                 maxHeight: '80vh',
                 padding: '1.5rem',
                 borderRadius: '1rem',
-                backgroundColor: '#eeeeee',
-                color: '#000',
+                backgroundColor: '#191919',
+                color: '#e5e5e5',
                 overflowY: 'auto',
                 display: 'flex',
                 flexDirection: 'column',
@@ -312,7 +311,7 @@ const Experience = () => {
                     <span
                       key={i}
                       style={{
-                        backgroundColor: 'var(--red-6)',
+                        backgroundColor: 'var(--teal-6)',
                         color: 'white',
                         padding: '0.35rem 0.75rem',
                         borderRadius: '9999px',
@@ -331,7 +330,7 @@ const Experience = () => {
                 <AlertDialog.Cancel>
                   <Button
                     style={{
-                      background: 'var(--red-8)',
+                      background: 'var(--teal-8)',
                       color: 'white',
                       cursor: 'pointer',
                     }}

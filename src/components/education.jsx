@@ -25,9 +25,7 @@ const Education = () => {
             fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: 'clamp(1.5rem, 2vw, 3rem)',
             fontWeight: 600,
-            background: 'linear-gradient(135deg, var(--red-5) 0%, var(--red-9) 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
+            color: 'var(--teal-9)',
           }}
           as="div"
         >
@@ -61,7 +59,7 @@ const Education = () => {
             style={{
             width: '1.5em',
             height: '1.5em',
-            color: 'var(--gray-5)', // match the text color or choose your own
+            color: 'var(--teal-9)', // match the text color or choose your own
             }}
         />
         <Text
@@ -69,7 +67,7 @@ const Education = () => {
             fontFamily: 'Inter, system-ui, sans-serif',
             fontSize: 'clamp(0.8rem, 1.4vw, 2rem)',
             fontWeight: 700,
-            color: 'var(--gray-5)',
+            color: 'var(--teal-9)',
             }}
             as="span"
             wrap="pretty"
